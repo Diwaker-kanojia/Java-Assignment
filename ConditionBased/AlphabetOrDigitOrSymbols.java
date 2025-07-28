@@ -10,7 +10,7 @@ public class AlphabetOrDigitOrSymbols {
             System.out.println("Alphabet");
         } else if (cha >= 'A' && cha <= 'Z') {
             System.out.println("Alphabet");
-        } else if (cha >= '1') {
+        } else if (cha >= '0') {
             System.out.println("Digit");
         } else {
             System.out.println("Special Symbol");

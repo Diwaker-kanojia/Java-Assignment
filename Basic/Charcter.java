@@ -12,7 +12,7 @@ public class Charcter {
             System.out.println("Lower Case");
         } else if (cha >= 'A' && cha <= 'Z') {
             System.out.println("Upper Case");
-        } else if (cha >= '1') {
+        } else if (cha >= '0') {
             System.out.println("Digit");
         } else {
             System.out.println("Special Symbol");
