@@ -25,10 +25,7 @@ public class Strong {
             sumOfFact += factorial(remainder);
             temp /= 10;
         }
-        if (sumOfFact == number)
-            return true;
-        else
-            return false;
+        return (sumOfFact == number);
     }
 
     public static void main(String[] args) {
