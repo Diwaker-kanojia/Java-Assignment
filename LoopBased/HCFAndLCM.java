@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class HCFAndLCM {
-
-    // Method to calculate HCF using Euclidean algorithm
     public static int findHCF(int a, int b) {
         while (b != 0) {
             int temp = b;
@@ -11,8 +9,6 @@ public class HCFAndLCM {
         }
         return a;
     }
-
-    // Method to calculate LCM using the relation: LCM * HCF = a * b
     public static int findLCM(int a, int b) {
         return (a * b) / findHCF(a, b);
     }
@@ -32,6 +28,5 @@ public class HCFAndLCM {
         System.out.println("HCF of " + num1 + " and " + num2 + " is: " + hcf);
         System.out.println("LCM of " + num1 + " and " + num2 + " is: " + lcm);
 
-        sc.close();
     }
 }
