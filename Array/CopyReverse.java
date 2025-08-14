@@ -1,4 +1,4 @@
-// 1) Create new array y of size x and copy the nmubers of array x into y in reverse order
+// 1) Create new array y of size x and copy the numbers of array x into y in reverse order
 
 import java.util.Arrays;
 
