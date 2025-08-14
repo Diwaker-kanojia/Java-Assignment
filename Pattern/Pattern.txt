@@ -1,0 +1,42 @@
+1. Pattern 1
+******
+*****
+****
+***
+**
+*
+**
+***
+****
+*****
+******
+
+2. Pattern 2
+A 
+B C 
+D E F 
+G H I J 
+K L M N O 
+P Q R S T U
+
+3. Pattern 3
+     1
+    121
+   12321
+  1234321
+ 123454321
+12345654321
+
+4. Pattern 4
+ABCDEDCBA
+ABCD DCBA
+ABC   CBA
+AB     BA
+A       A
+
+5. Pattern 5
+*       *
+ *     *
+  *   *
+   * *
+    *
