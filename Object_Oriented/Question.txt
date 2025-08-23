@@ -1,0 +1,84 @@
+Q5. Define Encapsulation in Java. Why is it important?
+Ans Definition: Encapsulation in Java is the process of wrapping data (fields/variables) and methods that operate on that data into a single unit (class). It is achieved by declaring fields as private and providing public getter and setter methods to access and update them.
+Importance:
+- Data hiding – Prevents direct access to data, increasing security.
+- Controlled access – Allows validation before modifying fields.
+- Modularity – Each class manages its own data.
+- Maintainability – Code is easier to modify without affecting external classes.
+
+
+Q6. What is the difference between method overloading and method overriding?
+Ans Method Overloading :
+    - Method overloading is a compile time polymorphism.
+    - Same method name but different parameter list (number/type).
+    - Return type Can be same or different (but must change parameter list).
+    - Access modifier Can have any modifier.
+    - static and final method Can be overloaded.
+    eg : add(int a, int b) and add(double a, double b).
+
+    Method Overriding : 
+    - Method Overriding is a Runtime polymorphism.
+    - Subclass provides a specific implementation of a method already defined in the parent class.
+    - Return type Must be same or covariant return type.
+    - Access modifier Cannot reduce parent method’s visibility.
+    - static and final method Cannot be overridden.
+    eg : Parent: display(), Child: display() with modified behavior.
+
+
+Q7. Explain the difference between compile-time polymorphism and runtime polymorphism with examples.
+Ans Compile-time polymorphism (Static binding / Method overloading) :
+    - Method to be executed is determined at compile-time.
+    - Achieved using method overloading.
+    Eg : 
+       class Calculator {
+           int add(int a, int b) {
+              return a + b;
+            }
+           double add(double a, double b) {
+              return a + b;
+            }
+        }
+        
+        public class Main {
+            public static void main(String[] args) {
+               Calculator c = new Calculator();
+               System.out.println(c.add(2, 3));      // calls int version
+               System.out.println(c.add(2.5, 3.5));  // calls double version
+            }
+        }
+    Runtime polymorphism (Dynamic binding / Method overriding) : 
+    - Method to be executed is determined at runtime.
+    - Achieved using method overriding.
+    Eg : 
+       class Animal {
+           void sound() {
+              System.out.println("Animal makes sound");
+            }
+        }
+        class Dog extends Animal {
+            void sound() {
+               System.out.println("Dog barks");
+            }
+        }
+
+        public class Main {
+           public static void main(String[] args) {
+                Animal a = new Dog(); // Upcasting
+                a.sound(); // Runtime decides -> "Dog barks"
+            }
+        }
+
+Q8. What is the role of the super keyword in Java inheritance? Give an example.
+Ans super keyword is use to access the field of parent or super class. super method is use to invoke the parent constructor.
+    Eg : 
+    class A { 
+        int x=10; 
+    }
+    class B extends A {
+        int x=20;
+        void show(){
+          System.out.println(super.x); // parent x
+        }
+    }
+
+    
