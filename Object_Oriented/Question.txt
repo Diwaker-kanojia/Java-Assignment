@@ -42,8 +42,8 @@ Ans Compile-time polymorphism (Static binding / Method overloading) :
         public class Main {
             public static void main(String[] args) {
                Calculator c = new Calculator();
-               System.out.println(c.add(2, 3));      // calls int version
-               System.out.println(c.add(2.5, 3.5));  // calls double version
+               System.out.println(c.add(2, 3));     
+               System.out.println(c.add(2.5, 3.5));  
             }
         }
     Runtime polymorphism (Dynamic binding / Method overriding) : 
@@ -64,7 +64,7 @@ Ans Compile-time polymorphism (Static binding / Method overloading) :
         public class Main {
            public static void main(String[] args) {
                 Animal a = new Dog(); // Upcasting
-                a.sound(); // Runtime decides -> "Dog barks"
+                a.sound(); 
             }
         }
 
@@ -77,7 +77,7 @@ Ans super keyword is use to access the field of parent or super class. super met
     class B extends A {
         int x=20;
         void show(){
-          System.out.println(super.x); // parent x
+          System.out.println(super.x); 
         }
     }
 
