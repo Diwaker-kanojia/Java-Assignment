@@ -1,4 +1,4 @@
-public class MyString {
+public final class MyString {
     public final char[] value;
 
     public MyString(String str) {
@@ -69,5 +69,20 @@ public class MyString {
             str.append(value[i]);
         }
         return str.toString();
+    }
+
+    // for uppercase
+    public String toUpperCase() {
+        StringBuffer string = new StringBuffer();
+
+        for (int i = 0; i < value.length; i++) {
+            char ch = value[i];
+            if (ch >= 'a' && ch <= 'z') {
+                string.append((char) (ch - 32));
+            } else {
+                string.append(ch);
+            }
+        }
+        return string.toString();
     }
 }
