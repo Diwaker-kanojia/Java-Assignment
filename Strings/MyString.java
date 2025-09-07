@@ -33,5 +33,15 @@ public class MyString {
         return -1;
     }
 
-    //
+    // to find the lastIndexof
+    public int lastIndexOf(char ch) {
+        int lastIndex = -1;
+        for (int i = 0; i < value.length; i++) {
+            if (value[i] == ch) {
+                lastIndex = i;
+                continue;
+            }
+        }
+        return lastIndex;
+    }
 }
