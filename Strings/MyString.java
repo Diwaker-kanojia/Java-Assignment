@@ -44,4 +44,17 @@ public class MyString {
         }
         return lastIndex;
     }
+
+    // for substring
+    public String subString(int fromIndex, int toIndex) {
+        if (fromIndex < 0 || toIndex > value.length || fromIndex > toIndex) {
+            return "Invalid Indexes";
+        }
+
+        StringBuffer str = new StringBuffer();
+        for (int i = fromIndex; i < toIndex; i++) {
+            str.append(value[i]);
+        }
+        return str.toString();
+    }
 }
