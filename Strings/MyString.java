@@ -57,4 +57,17 @@ public class MyString {
         }
         return str.toString();
     }
+
+    // for substring
+    public String subString(int toIndex) {
+        if (toIndex < 0 || toIndex > value.length) {
+            return "Invalid Index";
+        }
+
+        StringBuffer str = new StringBuffer();
+        for (int i = 0; i < toIndex; i++) {
+            str.append(value[i]);
+        }
+        return str.toString();
+    }
 }
