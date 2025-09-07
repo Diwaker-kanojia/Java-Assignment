@@ -100,4 +100,22 @@ public final class MyString {
         }
         return string.toString();
     }
+
+    // for toggleCase
+    public String toToggleCase() {
+        StringBuffer string = new StringBuffer();
+
+        for (int i = 0; i < value.length; i++) {
+            char ch = value[i];
+            if (ch >= 'A' && ch <= 'Z') {
+                string.append((char) (ch + 32));
+            } else if (ch >= 'a' && ch <= 'z') {
+                string.append((char) (ch - 32));
+            } else {
+                string.append(ch);
+            }
+        }
+        return string.toString();
+    }
+
 }
